@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Setup</title>
+    <style>
+        .flex {
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .card {
+            display: flex;
+            flex-direction: column;
+            padding: 30px 15px;
+            background-color: #eee;
+            border-radius: 6px;
+            margin: 20px 10px;
+            flex: 1 1 auto;
+            min-height: 200px;
+            text-align: center;
+        }
+        
+        div {
+            font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+            font-size: 21px;
+            font-weight: 200;
+        }
+        
+        button {
+            padding: 7px 10px;
+            margin: 10px;
+            flex: 1 1 auto;
+            font-size: 14px;
+            line-height: 1.3333333;
+            border-radius: 6px;
+            color: #fff;
+            background-color: #337ab7;
+            border-color: #2e6da4;
+        }
+        
+        .card > div {
+            flex: 1 1 auto;
+            transition: color 1s ease-out;
+            transition: text-shadow 0.4s ease-out;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .hidden {
+            text-shadow: black 0 0 8px;
+            color: transparent;
+            transition: none;
+        }
+        
+        .legende{
+            margin: 10px;
+            font-size: 0.7em;
+            text-align: right;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="app"></div>
+    <script src="index.js"></script>
+</body>
+
+</html>
